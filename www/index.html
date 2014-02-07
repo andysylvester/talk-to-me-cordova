@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.1.css" />
+    <script type="text/javascript" charset="utf-8" src="js/jquery-2.0.2.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.3.1.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      function onBodyLoad() {
+        document.addEventListener("deviceready", onDeviceReady,
+          false);
+      }
+      function onDeviceReady() {
+        //Get the appInfo DOM element
+        var element = document.getElementById("appInfo");
+	 }
+     function playVibrate() {
+        var u = new SpeechSynthesisUtterance();
+        var x = document.getElementById("frm1");
+        var txt = "";
+        txt = x.elements[0].value
+        u.text = txt;
+        u.lang = 'en-US';
+        speechSynthesis.speak(u);      
+        navigator.notification.vibrate(2000);
+        document.getElementById("frm1").reset();
+      }
+    </script>
+
+  </head>
+  <body onload="onBodyLoad()">
+    <div data-role="page"> 
+      <div data-role="header" data-position="fixed">
+        <h1>Talk to Me!</h1>
+      </div> 
+      <div data-role="content">
+        <p>This is a Cordova application that makes calls to 
+        the Cordova API's and uses the jQuery Mobile 
+        framework.</p>
+        <form id="frm1">
+          What should I say? <input type="text" name="fname" value="Hello world"><br>
+        </form> 
+		<button onclick="playVibrate();" class="ui-btn ui-btn-inline">Make me talk!</button>
+        <p id="appInfo"</p>
+      </div> 
+      <div data-role="footer" data-position="fixed">
+        <h1>More apps at andysylvester.com</h1>
+      </div> 
+    </div> 
+  </body>
+</html>
