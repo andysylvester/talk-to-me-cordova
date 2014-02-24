@@ -43,7 +43,7 @@ and enter some text in the field. Do not enter any punctuation, this can keep th
 
 Here is a picture of the finished app:
 
-<img src="http://andysylvester.com/wp-content/uploads/2014/02/Screenshot_TalkToMe.png">
+<img src="http://andysylvester.com/wp-content/uploads/2014/02/Screenshot_TalkToMe.png" height="300" width="200">
 
 This <a href="http://andysylvester.com/2014/02/08/first-steps-with-cordova-talk-to-me/">blog post</a> also talks about the app.
 
