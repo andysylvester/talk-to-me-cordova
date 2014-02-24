@@ -41,4 +41,10 @@ The application should open on your device and show a text field and button.
 You can click the button to speak the default phrase ("Hello world"). To enter a different phrase, tap in the text field
 and enter some text in the field. Do not enter any punctuation, this can keep the text from being read.
 
+Here is a picture of the finished app:
 
+<img src="http://andysylvester.com/wp-content/uploads/2014/02/Screenshot_TalkToMe.png">
+
+This <a href="http://andysylvester.com/2014/02/08/first-steps-with-cordova-talk-to-me/">blog post</a> also talks about the app.
+
+ 
